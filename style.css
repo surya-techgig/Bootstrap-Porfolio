@@ -6,7 +6,7 @@ html {
 }
 .preloader.active{
     position: fixed;
-    height: 670px;
+    height: 100vh;
     width: 100%;
     z-index: 3;
     background: #212529;
