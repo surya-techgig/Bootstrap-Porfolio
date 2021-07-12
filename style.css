@@ -1,0 +1,572 @@
+html {
+    scroll-behavior: smooth;
+}
+.preloader {
+    display: none;
+}
+.preloader.active{
+    position: fixed;
+    height: 670px;
+    width: 100%;
+    z-index: 3;
+    background: #212529;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.preloader.active .contents {
+    height: 500px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.preloader .spinner-grow {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+}
+.preloader .spinner-border {
+    height: 150px;
+    width: 150px;
+}
+.navbar .navbar-toggler {
+    border-color: transparent;
+}
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0;
+}
+.navbar-collapse {
+    flex-grow:0;
+}
+.nav-link{
+    font-size: 13px;
+}
+.nav-link {
+    border-radius: 4px;
+    padding: 12px 12px !important;
+}
+.nav-link:hover {
+    background-color: rgb(163, 159, 159);
+}
+.navbar {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+.hero {
+    position: relative;
+    display: flex;
+    top: 0px;
+    height: 550px;
+    width: 100%;
+    background: url(/Images/heero.jpg);
+    background-size: cover;
+    z-index: -1;
+    justify-content: center;
+    align-items: center;
+}
+.hero .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+}
+.intro .profile {
+    height: 130px;
+    width: 130px;
+    background: url(/Images/profile.jpg);
+    background-size: contain;
+    border-radius: 50%;
+}
+.intro .profile:hover{
+    height: 140px;
+    width: 140px;
+    transition: all ease 0.4s;
+}
+.intro .profile:hover .spinner-grow {
+    top: 10px;
+    left: 10px;
+    height: 120px;
+    width: 120px;
+}
+.intro .profile .spinner-grow {
+    position: relative;
+    z-index: -1;
+    top: -10px;
+    left: -10px;
+    height: 150px;
+    width: 150px;
+}
+.intro .info {
+    position: absolute;
+    bottom: 80px;
+}
+.intro .info h2{
+    font-weight: 700;
+    font-size: 35px;
+}
+.intro .info p{
+    font-size: 14px;
+    font-weight: 800;
+}
+.intro .socialicons{
+    width: 100%;
+    position: absolute;
+    bottom: -25px;
+}
+.intro .socialicons .icons {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.intro .socialicons .telegram {
+    padding: 10px;
+}
+.intro .socialicons .linkedin {
+    padding: 10px;
+}
+.intro .socialicons .github {
+    padding: 10px;
+}
+.intro .socialicons .insta {
+    padding: 11px;
+}
+.about {
+    position: relative;
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+    text-align: justify;
+}
+.about b {
+    font-size: 15px;
+    font-weight: 800;
+}
+.cardtext {
+    display: flex;
+    justify-content: space-between;
+}
+.skills{
+    margin-bottom: 18vh;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+}
+.content .icons {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.content .laptop {
+    background: rgb(187, 184, 184);
+    background: #212529;
+    border-radius: 50%;   
+}
+.content .laptop .iconify {
+    padding: 15px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: white;
+}
+.content .photo {
+    background: rgb(187, 184, 184);
+    border-radius: 50%;
+}
+.content .photo .iconify {
+    padding: 15px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: white;
+}
+.content .camera {
+    background: rgb(187, 184, 184);
+    border-radius: 50%;
+}
+.content .camera .iconify {
+    padding: 15px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: white;
+}
+.content .gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+.content .gallery .box {
+    width: 45%;
+    height: 320px;
+    margin: 20px;
+}
+.content .gallery img {
+    width: 100%;
+    height: 320px;
+}
+.content .gallery .overlay {
+    height: 93%;
+    width: 93%;
+}
+.content .gallery .overlay h4, .content .gallery .overlay p{
+    display: none;
+}
+.content .gallery .up {
+    position: relative;
+    top: -20px;
+}
+.content .gallery .lap1 {
+    background: url(/Images/Laptop/laptop1.jpg);
+    background-size: cover;
+}
+.content .gallery .lap1:hover {
+    background-size: 490px 320px;
+    background-position: center;
+}
+.content .gallery .lap1:hover .overlay {
+    background: black;
+    transition: all ease 0.8s;
+    opacity: 0.6;
+}
+.content .gallery .lap1:hover .overlay h4, .content .gallery .lap1:hover p{
+    display:initial;
+}
+.content .gallery .lap2 {
+    background: url(/Images/Laptop/laptop2.jpg);
+    background-size: cover;
+}
+.content .gallery .lap2:hover{
+    background-size: 490px 320px;
+    background-position: center;
+}
+.content .gallery .lap2:hover .overlay {
+    background: black;
+    transition: all ease 0.8s;
+    opacity: 0.6;
+}
+.content .gallery .lap2:hover .overlay h4, .content .gallery .lap2:hover p{
+    display:initial;
+}
+.content .gallery .lap3 {
+    background: url(/Images/Laptop/laptop3.jpg);
+    background-size: cover;
+}
+.content .gallery .lap3:hover .overlay {
+    background: black;
+    transition: all ease 0.8s;
+    opacity: 0.6;
+}
+.content .gallery .lap3:hover {
+    background-size: 490px 310px;
+    background-position: center;
+}
+.content .gallery .lap3:hover .overlay h4, .content .gallery .lap3:hover p{
+    display:initial;
+}
+.content .gallery .lap4 {
+    background: url(/Images/Laptop/laptop4.jpg);
+    background-size: cover;
+}
+.content .gallery .lap4:hover .overlay {
+    background: black;
+    transition: all ease 0.8s;
+    opacity: 0.6;
+}
+.content .gallery .lap4:hover {
+    background-size: 490px 320px;
+    background-position: center;
+}
+.content .gallery .lap4:hover .overlay h4, .content .gallery .lap4:hover p{
+    display:initial;
+}
+.contact {
+    height: 650px;
+    width: 100%;
+    background-image: url(/Images/Contactgoogle.jpeg);
+    background-size: cover;
+}
+.contact .card {
+    height: 75%;
+    width: 50%;
+}
+.contact .card .col-md-6 input {
+    height: 10px;
+    padding: 20px 45px;
+    position: relative;
+    margin: 0px 10px 20px -10px;
+    font-size: 13px;
+    width: 90%;
+}
+.contact .card .col-md-6 .user {
+    position: absolute;
+    margin:  10px 25px 23px 5px;
+    z-index: 1;
+    font-size: 20px;
+}
+.contact .card .col-md-6 .file {
+    position: absolute;
+    margin: 12px 26px 12px 10px;
+    z-index: 1;
+    font-size: 18px;
+}
+.contact .card .col-md-6 .mail {
+    position: absolute;
+    margin: 10px 25px 12px 8px;
+    z-index: 1;
+    font-size: 20px;
+}
+.contact .card .col-md-6 textarea {
+    padding: 10px 15px;
+    font-size: 13px;
+    width: 90%;
+    margin: 0px 10px 20px -10px;
+}
+.contact .card .col-md-6 button {
+    margin: 0px -10px;
+}
+.footer .telegram .iconify:hover {
+    color: #34ACE0;
+}
+.footer .linkedin .iconify:hover {
+    color: blue;
+}
+.footer .github .iconify:hover {
+    color: grey;
+}
+.footer .insta .iconify:hover {
+    color: purple;
+}
+@media only screen and (max-width: 991px) {
+    .navbar.navpad {
+        padding: 28px;
+    }
+    .navbar-brand.navnone {
+        display: none;
+    }
+    .navbar-toggler.navcentre{
+        position: absolute;
+        right: 350px;
+        transition: all ease-in 0.2s;
+        transition: left ease-out 0.9s;
+    }
+    .navbar-collapse {
+        /* z-index: -2; */
+        position: fixed;
+        background-color: #212529;
+        top:0px;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        transition: all ease-in 0.2s;
+        transition: right ease-out 0.1s;
+    }
+    .navbar-nav {
+        position: relative;
+        flex-direction: column !important;
+        margin-top: 50px;
+    }
+    .nav-link {
+        margin: 10px 16px 0px 16px;
+        border-radius: 4px;
+        padding: 12px 12px !important;
+    }
+    .nav-link:hover {
+        background-color: rgb(163, 159, 159);
+    }
+    .hero {
+        background: url(/Images/heero.jpg);
+        background-size: cover;
+    }
+    .intro .socialicons .telegram {
+        padding: 4px 10px !important;
+    }
+    .intro .socialicons .linkedin {
+        padding: 4px 12px !important;
+    }
+    .intro .socialicons .github {
+        padding: 4px 12px !important;
+    }
+    .intro .socialicons .insta {
+        padding: 4px 12px !important;
+    }
+    .about {
+        position: relative;
+        margin-top: 10vh;
+        text-align: justify;
+    }
+    .content .gallery {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .content .gallery img {
+        width: 45%;
+        margin: 5px;
+    }
+    .content .gallery .up {
+        position: relative;
+        top: 20px;
+    }
+    .carousel-item .card .col-md-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+    .carousel-item .card-body {
+        padding: 10px 0px;
+    }
+    .carousel-item .card .col-md-10 {
+        padding: 0px;
+    }
+    .content .gallery .box {
+        width: 48%;
+        height: 200px;
+        margin: 5px;
+    }
+    .content .gallery .lap1 {
+        background: url(/Images/Laptop/laptop1.jpg);
+        background-size: cover;
+    }
+    .content .gallery .lap1:hover{
+        background-size: 320px 200px;
+        background-position: center;
+    }
+    .content .gallery .lap2 {
+        background: url(/Images/Laptop/laptop2.jpg);
+        background-size: cover;
+    }
+    .content .gallery .lap2:hover{
+        background-size: 320px 220px;
+        background-position: center;
+    }
+
+    .content .gallery .lap3 {
+        background: url(/Images/Laptop/laptop3.jpg);
+        background-size: cover;
+    }
+    .content .gallery .lap3:hover{
+        background-size: 330px 190px;
+        background-position: center;
+    }
+    .content .gallery .lap4 {
+        background: url(/Images/Laptop/laptop4.jpg);
+        background-size: cover;
+    }
+    .content .gallery .lap4:hover{
+        background-size: 320px 220px;
+        background-position: center;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .navbar-collapse {
+        height: 100vh;
+        width: 200px;
+    }
+    .navbar-toggler.navcentre{
+        position: absolute;
+        right: 210px;
+        transition: all ease-in 0.2s;
+        transition: left ease-out 0.9s;
+    }
+    .hero {
+        background: url(/Images/heero.jpg);
+        background-size: cover;
+    }
+    .card-body b {
+        margin-right: 100% !important;
+    }
+    .about {
+        position: relative;
+        margin-top: 10vh;
+        text-align: justify;
+    }
+    .content .gallery {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .content .gallery img {
+        width: 90%;
+        margin: 10px;
+    }
+    .content .gallery .up {
+        position: relative;
+        top: -5px;
+    }
+    .contact {
+        height: 900px !important;
+        width: 100%;
+        background-image: url(/Images/Contactgoogle.jpeg);
+        background-size: cover;
+    }
+    .contact .card {
+        height: 90%;
+        width: 90%;
+    }
+    .contact .card .col-md-6 input {
+        width: 100%;
+    }
+    .contact .card .col-md-6 textarea {
+        width: 100%;
+    }
+    .content .gallery .box {
+        width: 100%;
+        height: 250px;
+        margin: 20px;
+    }
+    .content .gallery .lap1 {
+        background: url(/Images/Laptop/laptop1.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .content .gallery .lap1:hover{
+        background-size: 340px 240px;
+        background-position: center;
+    }
+    .content .gallery .lap2 {
+        background: url(/Images/Laptop/laptop2.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .content .gallery .lap2:hover{
+        background-size: 340px 240px;
+        background-position: center;
+    }
+    .content .gallery .lap3 {
+        background: url(/Images/Laptop/laptop3.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .content .gallery .lap3:hover{
+        background-size: 340px 240px;
+        background-position: center;
+    }
+    .content .gallery .lap4 {
+        background: url(/Images/Laptop/laptop4.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .content .gallery .lap4:hover{
+        background-size: 330px 240px;
+        background-position: center;
+    }
+}
+@media only screen and (max-width: 780px) {
+    .contact {
+        height: 850px;
+        width: 100%;
+        background-image: url(/Images/Contactgoogle.jpeg);
+        background-size: cover;
+    }
+    .contact .card {
+        height: 90%;
+        width: 90%;
+    }
+    .contact .card .col-md-6 textarea {
+        width: 100%;
+    }
+    .contact .card .col-md-6 input {
+        width: 100%;
+    }
+}
